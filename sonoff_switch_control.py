@@ -13,6 +13,8 @@ import sys
 import socket
 import requests
 
+import xml.etree.ElementTree as ET
+
 #TODO: * add requirements.txt file
 #      * import python logger
 
@@ -43,13 +45,47 @@ def sonoff_switch(ip_add, value):
 
 
 def main():
-	print("--------------------------------------------------------------\n\r\tThis is Console App for Sonoff HTTPS request\n\r--------------------------------------------------------------\n\r")
+	print("--------------------------------------------------------------\n\r\tThis is Console App for Sonoff HTTPS request\n\r--------------------------------------------------------------\n\rYour current IP add is:")
 	get_current_ip()
+
+	tree = ET.parse('config.xml')
+	root = tree.getroot()
+
+	#TODO: Give me the # of childs
+	number_of_children = len(root.getchildren())
+	number_of_children_element = 2
+	for child in root:
+            print(child.tag)
+
+	print(root[0][0].text)
+
+
+	print("\n\rSelect from menu:\n\r-------------------")
+	for x in range(0, number_of_children):
+		print(str(x+1) + ")" + root[x][0].text)
+	print("q)Quit")
+	
+	var = input(">>")
+	if var=='q':
+		print("\tQuit App\n\r--------------------------------------------------------------")
+		sys.exit()
+
+	#TODO: True and False
+	var = int(var)
+	if var > number_of_children:
+		print("\tUndefined Selected. Retype")
+
+	print(root[var-1][0].text + " selected")
+	if sonoff_switch(root[var-1][1].text, 1):
+		print("\tSucessfully")
+	else:
+		print("\tFailed")
+
 
 	while 1:
 		print("\n\rSelect from menu:\n\r-------------------\n\r1)LED-strip-ON\n\r2)LED-strip-OFF\n\r3)OurLamp-ON\n\r4)OurLamp-OFF\n\rq)quit")
 
-		var = raw_input(">>")
+		var = input(">>")
                 #TODO: generic made a list from .xml files
 		if var=='1':
 			print("\tOurLamp-ON")
@@ -84,10 +120,10 @@ def main():
 				print("\tFailed")
 				continue
 		elif var=='q':
-			print("\tQuit App")
+			print("\tQuit App\n\r--------------------------------------------------------------")
 			sys.exit()
 		else:
-			print("\tUndefined Selected -> Exit")
+			print("\tUndefined Selected. Retype")
 
 
 if __name__ == "__main__":
