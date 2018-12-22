@@ -7,7 +7,7 @@ Number of switches are configurable trought `config.xml` file.
 ![Screenshot_from_2018-12-22_20-23-18](/uploads/32d11ca86f36d904a773edb0a7025be8/Screenshot_from_2018-12-22_20-23-18.png)
 
 ## Prerequisite
- * python2
+ * Python 3
  * setup and connected Sonoff WIFI Smart Switch Basic on your wifi network. How to is [HERE](https://www.letscontrolit.com/wiki/index.php/Tutorial_Arduino_Firmware_Upload#Download_and_installing_the_Arduino_IDE )
 
  ## Usage
