@@ -4,7 +4,7 @@ This is console menu application for actuating [Sonoff WIFI Smart Switch Basic](
 
 Number of switches are configurable trought `config.xml` file.
 
-![Screenshot_from_2018-12-22_20-23-18](/uploads/32d11ca86f36d904a773edb0a7025be8/Screenshot_from_2018-12-22_20-23-18.png)
+![Screenshot_from_2018-12-23_13-26-04](/uploads/83a68bb90c6f263417ba0d4ff99abb49/Screenshot_from_2018-12-23_13-26-04.png)
 
 ## Prerequisite
  * Python 3
