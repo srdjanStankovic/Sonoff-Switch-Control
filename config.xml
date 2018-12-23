@@ -8,8 +8,4 @@
       <name>Our-Lamp</name>
       <ip_add>192.168.0.14</ip_add>
    </second>
-   <number_in_console>
-      <name>Name</name>
-      <ip_add>IP address</ip_add>
-   </number_in_console>
 </sonoff-switch-control>
