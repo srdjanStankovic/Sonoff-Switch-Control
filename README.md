@@ -1,4 +1,4 @@
-# SonoffSwitchControl
+# Sonoff-Switch-Control
 
 This is console menu application for actuating [Sonoff WIFI Smart Switch Basic](https://www.sonoff.in/index.php?route=product/product&path=62&product_id=75) by posting HTTP request written in Python. Your pc/laptop and Sonoff Smart Switches have to be on the same WiFi network and you need to know IP address for each of yours Sonoff Smart Switches. 
 
