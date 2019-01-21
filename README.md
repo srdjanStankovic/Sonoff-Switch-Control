@@ -4,8 +4,9 @@ This is console menu application for actuating [Sonoff WIFI Smart Switch Basic](
 
 ## Prerequisite
  * Python 3
- * Setup and connect Sonoff WIFI Smart Switch Basic on your WiFi network. How to is [HERE](https://www.letscontrolit.com/wiki/index.php/Tutorial_Arduino_Firmware_Upload#Download_and_installing_the_Arduino_IDE ). **IMPORTANT: You will actually write new firmware to Sonoff. Setup Arduino IDE Settings like [THIS](https://imgur.com/SRXAIEH).**
-
+ * Connect Sonoff WIFI Smart Switch Basic on your WiFi network. How to is [HERE](https://www.letscontrolit.com/wiki/index.php/Tutorial_Arduino_Firmware_Upload#Download_and_installing_the_Arduino_IDE ). **IMPORTANT: You will actually write new firmware to Sonoff. Setup Arduino IDE Settings like [THIS](https://imgur.com/SRXAIEH).**
+ * Configure Sonoff WIFI Smart Switch Basic following ***Sonoff configuration*** section from [THIS](https://rutg3r.com/sonoff-firmware-tutorial-to-esp-easy/) guide.
+ 
  ## Usage
 In `config.xml` list all of yours Sonoff WIFI Smart Switches and they will appear in console menu. One switch is represented as a pair:
 - `<name>`
