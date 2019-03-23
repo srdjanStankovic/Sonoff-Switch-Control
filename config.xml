@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <sonoff-switch-control>
    <first>
-      <name>LED-strip</name>
-      <ip_add>192.168.0.15</ip_add>
+      <name>name-without-white-space</name>
+      <ip_add>ip-address1</ip_add>
    </first>
    <second>
-      <name>Our-Lamp</name>
-      <ip_add>192.168.0.14</ip_add>
+      <name>name-without-white-space</name>
+      <ip_add>ip-address2</ip_add>
    </second>
 </sonoff-switch-control>
