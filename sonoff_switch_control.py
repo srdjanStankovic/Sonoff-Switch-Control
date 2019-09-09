@@ -74,7 +74,7 @@ def main():
             print("\tUndefined Selected. Retype")
             continue
 
-        # TODO: parni su ON, neparni su OFF
+        # TODO: Even are ON, Odd are OFF
         if var % 2 == 0:
             new_var = var / 2
             value = 1
